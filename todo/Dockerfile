@@ -8,13 +8,13 @@ COPY . /var/www/html/ # Copies everything in the current directory to /var/www/h
 
 # Set file permissions (important!)
 RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 755 /var/www/html/
+    && chmod -R 755 /var/www/html/config.php
 
 # Expose port 80 (or the port your web server is listening on)
 EXPOSE 9000
 
 # (Optional) Set the working directory
-WORKDIR /var/www/html
+WORKDIR /var/www/html/config.php
 
 # (Optional) Any other commands you need, like installing dependencies with Composer
 # Example:
