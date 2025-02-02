@@ -22,7 +22,7 @@ RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/
 
 # Expose port 80 (or the port your web server is listening on)
-EXPOSE 80
+EXPOSE 9000
 
 # Set the working directory (optional but recommended)
 WORKDIR /var/www/html
